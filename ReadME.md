@@ -1,8 +1,8 @@
-## Dog Breed Search & Random Image Generator
+# Dog Breed Search & Random Image Generator
 
 A simple web app that lets users search for dog breeds and generate random dog images using the Dog API
 
-# Features
+## Features
 
 🔍Search Dog Breeds: Type a breed name to view available dog breeds.
 🐾 Random Dog Images: Instantly generate random dog photos.
@@ -15,7 +15,7 @@ CSS
 JavaScript
 Dog API (https://dog.ceo/dog-api/)
 
-# How It Works
+### How It Works
 
 The app fetches a list of all available dog breeds from the Dog API.
 Users can search for any breed in the input field.
