@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dog Gallery</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- Random Image Selection Section -->
+      <section>
+        <h1>Random Image Section</h1>
+        <div class="random-grid">
+          <div class="spinner"></div>
+          <div id="image-container">
+            <img src="photos/NAT.jpg" alt="" id="breedImage" />
+          </div>
+          <p id="error"></p>
+        </div>
+        <p>Want to see a random dog image?</p>
+        <button id="btn" type="button" onclick="fetchData()">Click here</button>
+      </section>
+      <!--  Image Search Section -->
+      <section class="imageGallery">
+        <h1>Dog Image Gallery</h1>
+        <input type="text" placeholder="Enter breed name" id="inputField" />
+        <button onclick="SearchBreed()" type="button">Search</button>
+        <div class="gallery-grid">
+          <span id="errorMsg"></span>
+          <div class="SearchResultContainer">
+            <img src="photos/NAT.jpg" alt="" id="breedImage" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Image  Filter Selection Section -->
+      <section class="image-filter">
+        <h1>Image Filter Section</h1>
+        <label for="filter-container"></label>
+        <select id="filter-container" name="dropdownName">
+          <option value=""></option>
+        </select>
+        <div class="filter-grid"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
