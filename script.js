@@ -19,13 +19,13 @@ async function fetchData() {
     spinner.style.display = "none";
   } catch (error) {
     errorMsg.style.display = "block";
-    errorMsg.innerText = error
+    errorMsg.innerText = error;
   }
 }
 // SearchBreed
 
 async function SearchBreed() {
-  const Inputvalue = document.getElementById("inputField").value;
+  const Inputvalue = document.getElementById("inputField").value.toLowerCase();
   document.querySelector(".SearchResultContainer").innerHTML = "";
   try {
     const response = await fetch(
