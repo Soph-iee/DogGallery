@@ -16,7 +16,6 @@ async function fetchData() {
     img.src = data.message;
     img.alt = "random-dog-image";
     imgContainer.appendChild(img);
-    
     spinner.style.display = "none";
   } catch (error) {
     errorMsg.style.display = "block";
@@ -37,6 +36,7 @@ async function SearchBreed() {
     }
     const data = await response.json();
     document.getElementById("errorMsg").innerText = "";
+    const img = document.createElement("img");
     img.src = data.message;
     img.alt = "random-dog-image";
     document.querySelector(".SearchResultContainer").appendChild(img);
