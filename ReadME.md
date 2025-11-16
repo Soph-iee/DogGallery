@@ -1,6 +1,6 @@
 # Dog Breed Search & Random Image Generator
 
-A simple web app that lets users search for dog breeds and generate random dog images using the Dog API
+A responsive simple web app that lets users search for dog breeds and generate random dog images using the Dog API
 
 ## Features
 
@@ -21,3 +21,6 @@ The app fetches a list of all available dog breeds from the Dog API.
 Users can search for any breed in the input field.
 When a breed is selected, the app displays a random image of that breed.
 Clicking the “Generate Random Image” button fetches another random dog image.
+
+### Live Link
+The website is deployed live on vercel here (https://dog-gallery-kohl.vercel.app/)
